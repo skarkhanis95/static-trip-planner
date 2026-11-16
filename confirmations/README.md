@@ -8,7 +8,7 @@ for example `.png` instead of `.pdf`).
 |---|---|
 | flight-family-outbound-T675KL.pdf | BOM → AMD → JAI, 26 Nov |
 | flight-family-return-TYU1GM.pdf | JSA → DEL → PNQ, 3 Dec |
-| train-12939-pnr-8356214903.pdf | Parents' train, Pune → Jaipur |
+| flight-parents-outbound-D77SNY.pdf | Parents' IndiGo 6E 5135, BOM → JAI, 26 Nov 00:15 |
 | flight-parents-return-FG8H5X.pdf | Parents' IndiGo JSA → BOM, 3 Dec |
 | cab-jcr-cabs.pdf | JCR Cabs Innova Crysta |
 | hotel-family-jaipur-umaid-bhawan.pdf | Family: Umaid Bhawan (Agoda) |
