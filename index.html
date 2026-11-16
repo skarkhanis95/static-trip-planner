@@ -4,25 +4,30 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#1c2233">
-<title>Rajasthan Family Journey | 26 Nov – 3 Dec 2026</title>
+<title>Rajasthan Family Journey | 25 Nov – 3 Dec 2026</title>
 <style>
-:root{--bg:#f3f1ec;--ink:#1c2233;--mut:#5d6372;--card:#fff;--line:#e2ddd3;--go:#1f7a4d;--due:#b0651a;--jp:#b9455f;--ud:#2f7a84;--jd:#2e5aa6;--sm:#a5562b;--js:#c49a22;--serif:Georgia,"Times New Roman",serif}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:64px}
+:root{--bg:#f3f1ec;--ink:#1c2233;--mut:#5d6372;--card:#fff;--line:#e2ddd3;--go:#1f7a4d;--due:#b0651a;--jp:#b9455f;--ud:#2f7a84;--jd:#2e5aa6;--js:#c49a22;--pn:#6b7280;--fam:#2e5aa6;--par:#a5562b;--serif:Georgia,"Times New Roman",serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:110px}
 body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 a{color:var(--jd)}.wrap{max-width:1080px;margin:auto;padding:0 20px}
-header{background:var(--ink);color:#fff;padding:34px 0 0}
+header{background:linear-gradient(90deg,rgba(17,21,34,.9) 0%,rgba(17,21,34,.62) 55%,rgba(17,21,34,.2) 100%),linear-gradient(0deg,rgba(17,21,34,.9) 0%,rgba(17,21,34,0) 45%),url(background.jpeg) center 55%/cover #1c2233;color:#fff;padding:56px 0 0;text-shadow:0 1px 8px rgba(0,0,0,.35)}
 header h1{font:400 clamp(40px,8vw,78px)/1 var(--serif);letter-spacing:-.03em;margin:0 0 12px}
-header p{margin:0;max-width:560px;color:#cfd3df}
+header p{margin:0;max-width:600px;color:#eef0f5}
 .hd{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:flex-end}
-.count{background:#ffffff14;border:1px solid #ffffff26;border-radius:14px;padding:14px 20px;min-width:190px}
+.count{background:#11152299;backdrop-filter:blur(6px);border:1px solid #ffffff40;border-radius:14px;padding:14px 20px;min-width:190px}
 .count b{font:400 34px/1.1 var(--serif);display:block}.count span{font-size:13px;color:#cfd3df}
-.facts{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0 26px}.facts span{font-size:13px;border:1px solid #ffffff33;border-radius:20px;padding:4px 12px}
+.facts{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0 26px}.facts span{font-size:13px;background:#11152266;border:1px solid #ffffff40;border-radius:20px;padding:4px 12px}
 .band{display:flex;height:10px}.band i{display:block}
-.legend{display:flex;background:#161b2a}.legend div{padding:10px 12px;font-size:12px;color:#cfd3df;border-left:1px solid #ffffff1f;min-width:0}
+.legend{display:flex;background:#111522cc}.legend div{padding:10px 12px;font-size:12px;color:#cfd3df;border-left:1px solid #ffffff1f;min-width:0}
 .legend b{display:block;color:#fff;font-size:14px;font-weight:600}
 nav{position:sticky;top:0;z-index:20;background:#fffffff2;backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-nav .wrap{display:flex;gap:4px;overflow:auto;padding-top:8px;padding-bottom:8px}
-nav a{color:var(--mut);text-decoration:none;font-size:13px;font-weight:600;padding:7px 12px;border-radius:18px;white-space:nowrap}
+nav .wrap{padding-top:8px;padding-bottom:6px}
+.seg{display:flex;gap:4px;background:#ece8de;border-radius:22px;padding:3px;width:max-content;max-width:100%;overflow:auto}
+.seg button{border:0;background:none;font:600 13px inherit;font-family:inherit;color:var(--mut);padding:6px 14px;border-radius:18px;cursor:pointer;white-space:nowrap}
+.seg button[aria-pressed=true]{background:var(--ink);color:#fff}
+.seg button small{font-weight:500;opacity:.75}
+.links{display:flex;gap:4px;overflow:auto;margin-top:6px}
+nav a{color:var(--mut);text-decoration:none;font-size:13px;font-weight:600;padding:6px 12px;border-radius:18px;white-space:nowrap}
 nav a:hover,nav a.on{background:var(--ink);color:#fff}
 main{padding:10px 0 60px}section{margin:40px 0}
 h2{font:400 30px/1.15 var(--serif);margin:0 0 4px}.sub{color:var(--mut);margin:0 0 18px}
@@ -33,9 +38,16 @@ h2{font:400 30px/1.15 var(--serif);margin:0 0 4px}.sub{color:var(--mut);margin:0
 .notice.red{background:#fbeaea;border-color:#e6b9b9;color:#6a2323}
 .btn{border:0;border-radius:18px;padding:8px 15px;background:var(--ink);color:#fff;font:600 13px inherit;font-family:inherit;cursor:pointer}.btn.ghost{background:#fff;color:var(--ink);border:1px solid var(--line)}
 .row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.who{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;color:var(--mut)}
+.who:before{content:"";width:9px;height:9px;border-radius:50%;background:var(--w)}
+.who.fam{--w:var(--fam)}.who.par{--w:var(--par)}.who.all{--w:var(--ink)}
+.travel .card{border-top:5px solid var(--w)}
+.travel .card.fam{--w:var(--fam)}.travel .card.par{--w:var(--par)}.travel .card.all{--w:var(--js)}
+.top{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:4px}
 .flight b.t{font:400 26px var(--serif)}.fl{display:flex;justify-content:space-between;align-items:center;margin:12px 0}
 .fl small{color:var(--mut);display:block}.leg{border-top:1px solid var(--line);padding-top:8px;margin-top:8px;font-size:13px}
-.tag{font-size:12px;font-weight:700;padding:2px 9px;border-radius:12px;background:#e3f2ea;color:var(--go)}.tag.d{background:#fdebd3;color:var(--due)}
+.tag{font-size:12px;font-weight:700;padding:2px 9px;border-radius:12px;background:#e3f2ea;color:var(--go);white-space:nowrap}.tag.d{background:#fdebd3;color:var(--due)}
+a.doc{display:inline-block;font-size:12px;font-weight:700;text-decoration:none;border:1px solid var(--line);border-radius:12px;padding:1px 9px;background:#fff;white-space:nowrap}a.doc:hover{background:var(--ink);color:#fff}
 .day{background:var(--card);border:1px solid var(--line);border-left:6px solid var(--c);border-radius:12px;margin-bottom:10px}
 .day summary{list-style:none;cursor:pointer;display:flex;gap:14px;align-items:center;padding:14px 16px}.day summary::-webkit-details-marker{display:none}
 .dn{font:400 26px var(--serif);color:var(--c);min-width:34px}.day h3{margin:0;font-size:17px;line-height:1.3}.day small{color:var(--mut)}
@@ -43,6 +55,10 @@ h2{font:400 30px/1.15 var(--serif);margin:0 0 4px}.sub{color:var(--mut);margin:0
 .day.today{box-shadow:0 0 0 2px var(--c)}
 .db{padding:2px 18px 18px 64px;display:grid;grid-template-columns:1fr 260px;gap:20px}
 .db ul{margin:6px 0;padding-left:20px;columns:2}.db li{break-inside:avoid}
+.lanes{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:10px 0}
+.lane{border:1px solid var(--line);border-top:4px solid var(--w);border-radius:10px;padding:10px 14px;font-size:14px;background:#fcfbf8}
+.lane.fam{--w:var(--fam)}.lane.par{--w:var(--par)}
+.lane ul{columns:1;margin:6px 0 0;padding-left:18px}
 .pill{display:inline-block;font-size:12px;font-weight:700;background:#eef0f5;border-radius:12px;padding:2px 10px;margin:0 6px 6px 0}.pill.lg{background:#fdebd3;color:var(--due)}
 .stay{background:#f7f6f2;border-radius:10px;padding:12px;font-size:13px;align-self:start}.stay b{display:block;font-size:14px}
 .tip{border-left:3px solid var(--c);padding:6px 12px;background:#f7f6f2;font-size:14px;margin-top:10px}
@@ -59,145 +75,219 @@ input.nm:focus,input.m:focus{outline:2px solid var(--jd);background:#fff}
 .lg2{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--mut)}
 .chk{display:flex;gap:10px;padding:9px 0;border-bottom:1px solid var(--line);cursor:pointer}.chk:last-child{border:0}
 .chk input{accent-color:var(--ud);width:18px;height:18px;margin-top:3px;flex:none}.chk input:checked+span{text-decoration:line-through;color:var(--mut)}
+.chk .who{margin-left:6px}
 .prog{height:6px;background:#e9e5dc;border-radius:3px;margin:6px 0 10px}.prog i{display:block;height:100%;background:var(--go);border-radius:3px;width:0}
 footer{border-top:1px solid var(--line);padding:22px 0;color:var(--mut);font-size:12px}
 :focus-visible{outline:2px solid var(--jd);outline-offset:2px}
-@media(max-width:760px){.g2,.g3,.db{grid-template-columns:1fr}.g4{grid-template-columns:1fr 1fr}.db{padding-left:18px}.db ul{columns:1}.legend div:nth-child(n+4){display:none}.legend b{font-size:12px}}
+body[data-view=fam] [data-v=par],body[data-view=par] [data-v=fam]{display:none!important}
+body:not([data-view=all]) [data-v=all]{display:none!important}
+body[data-view=fam] .lanes,body[data-view=par] .lanes{grid-template-columns:1fr}
+@media(max-width:760px){.g2,.g3,.db,.lanes{grid-template-columns:1fr}.g4{grid-template-columns:1fr 1fr}.db{padding-left:18px}.db ul{columns:1}.legend div:nth-child(n+4){display:none}.legend b{font-size:12px}.seg button{padding:6px 11px}.seg button small{display:none}}
 @media print{nav,.row,.x,.btn{display:none!important}body{background:#fff}.card,.day{break-inside:avoid}header{print-color-adjust:exact;-webkit-print-color-adjust:exact}.band i,.bar i{print-color-adjust:exact;-webkit-print-color-adjust:exact}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
-<body>
+<body data-view="all">
 <header><div class="wrap">
-<div class="hd"><div><h1>Rajasthan</h1><p>Palaces, lakes, blue-city lanes and a desert night. Two adults and a three-year-old, by private cab, 26 November to 3 December 2026.</p></div>
-<div class="count" aria-live="polite"><b id="cd">–</b><span id="cds">until take-off from Mumbai</span></div></div>
-<div class="facts"><span>8 days · 7 nights</span><span>5 stays</span><span>~1,000 km by road</span><span>Mumbai → Pune via Jaipur &amp; Jaisalmer</span></div>
+<div class="hd"><div><h1>Rajasthan</h1><p>Palaces, lakes, blue-city lanes and a desert night. Five travellers in one Innova Crysta: Siddharth, Isha and Samar, joined by Amol and Vaidehi. Together from 26 November to 3 December 2026.</p></div>
+<div class="count" aria-live="polite"><b id="cd">–</b><span id="cds">until the journey begins</span></div></div>
+<div class="facts"><span>5 travellers</span><span>9 days · 7 nights</span><span>Same cities, different hotels in Jaipur &amp; Udaipur</span><span>~1,000 km by road</span><span>Two ways in, two ways home</span></div>
 </div>
 <div class="band" id="band"></div><div class="legend" id="legend"></div>
 </header>
-<nav><div class="wrap"><a href="#today">Essentials</a><a href="#flights">Flights</a><a href="#itinerary">Itinerary</a><a href="#stays">Stays &amp; refs</a><a href="#budget">Budget</a><a href="#expenses">Expense planner</a><a href="#todo">To-do &amp; packing</a></div></nav>
+<nav><div class="wrap">
+<div class="seg" role="group" aria-label="Choose whose journey to show" id="seg">
+<button data-view="all" aria-pressed="true">Everyone <small>combined</small></button>
+<button data-view="fam" aria-pressed="false">Siddharth · Isha · Samar</button>
+<button data-view="par" aria-pressed="false">Amol &amp; Vaidehi</button></div>
+<div class="links"><a href="#today">Essentials</a><a href="#flights">Travel</a><a href="#itinerary">Itinerary</a><a href="#stays">Stays &amp; refs</a><a href="#expenses">Expense planner</a><a href="#todo">To-do &amp; packing</a></div>
+</div></nav>
 <main class="wrap">
 
 <section id="today">
 <h2>Read this first</h2><p class="sub">What needs attention before you leave.</p>
 <div class="grid g2">
-<div class="notice red"><b>Night of 25 Nov: leave Pune by about 10 pm.</b> The first flight leaves Mumbai at 04:15, so you need to be at the airport around 02:15. The Pune → Mumbai cab is still unbooked.</div>
-<div class="notice"><b>Pending to pay: ₹3,547 in hotel balances.</b> Krishna Prakash ₹1,447 · SIA Luxury Resort ₹2,100. Rajputana Cabs (about ₹25,000) is to be booked about 3 days before travel.</div>
+<div class="notice red" data-v="par"><b>Train tickets are still waitlisted (WL 53 and WL 54).</b> Check the PNR status daily. If they have not confirmed by <b>23 Nov</b>, send Amol and Vaidehi's details to the ticket agent on WhatsApp <a href="https://wa.me/918432332510" target="_blank" rel="noopener">+91 84323 32510</a> to get Tatkal tickets. <a class="doc" data-doc="train">Open ticket ↗</a></div>
+<div class="notice red" data-v="fam"><b>Night of 25 Nov: leave Pune by about 10 pm.</b> The first flight leaves Mumbai at 04:15, so you need to be at the airport around 02:15. The Pune → Mumbai cab is still unbooked.</div>
+<div class="notice"><b>Cab: JCR Cabs ₹47,500 is not paid yet.</b> Pay the advance when you confirm with them; the amount paid shows in the cab card below.</div>
+<div class="notice" data-v="fam"><b>Family still to pay: ₹6,361.50.</b> Sunrise Desert Resort ₹4,914.50 on MakeMyTrip before 29 Nov (half of ₹9,829) + Krishna Prakash ₹1,447 at the hotel. Check the refund for the cancelled SIA booking.</div>
+<div class="notice" data-v="par"><b>Parents still to pay: ₹8,484.50.</b> Sunrise Desert Resort ₹4,914.50 on MakeMyTrip before 29 Nov (half of ₹9,829) + Krishna Prakash ₹3,570 at check-in on 30 Nov (booking OFFL-11276491626).</div>
+<div class="notice" data-v="all"><b>Apart and together.</b> Hotels differ in Jaipur and Udaipur; everyone meets at Krishna Prakash, Sunrise and Heritage House Everyone is apart on 25 Nov and again on 3 Dec. Parents arrive in Jaipur by train at 14:20 on 26 Nov, about 5½ hours after Siddharth's family lands. Use the switch above to see one family's journey on its own.</div>
 </div>
-<div class="grid g4" style="margin-top:14px" id="stats"></div>
 </section>
 
-<section id="flights">
-<h2>Flights</h2><p class="sub">Both bookings are paid. Reference numbers copy with one tap.</p>
+<section id="flights" class="travel">
+<h2>Travel</h2><p class="sub">Getting in, getting around, getting home. Reference numbers copy with one tap.</p>
 <div class="grid g2">
-<article class="card flight"><div style="display:flex;justify-content:space-between"><b>Thu 26 Nov · Outbound</b><span class="tag">Paid</span></div>
+<article class="card flight fam" data-v="fam"><div class="top"><span class="who fam">Siddharth · Isha · Samar</span><span class="tag">Paid</span></div><b>Thu 26 Nov · Flight to Jaipur</b>
 <div class="fl"><div><b class="t">04:15</b><small>Mumbai BOM</small></div><small>via Ahmedabad</small><div style="text-align:right"><b class="t">08:35</b><small>Jaipur JAI</small></div></div>
 <div class="leg">BOM → AMD · 04:15–05:35</div><div class="leg">AMD → JAI · 07:00–08:35 <small>(1 h 25 min connection)</small></div>
-<div class="leg">PNR <b>T675KL</b><button class="cp" data-cp="T675KL">Copy</button> · ₹23,852</div></article>
-<article class="card flight"><div style="display:flex;justify-content:space-between"><b>Thu 3 Dec · Return</b><span class="tag">Paid</span></div>
+<div class="leg">PNR <b>T675KL</b><button class="cp" data-cp="T675KL">Copy</button> · ₹23,852 · <a class="doc" data-doc="famOut">Open confirmation ↗</a></div></article>
+
+<article class="card flight par" data-v="par"><div class="top"><span class="who par">Amol &amp; Vaidehi</span><span class="tag d">Waitlisted · WL 53, WL 54</span></div><b>Wed 25 Nov · Train 12939 Pune → Jaipur</b>
+<div class="fl"><div><b class="t">17:30</b><small>Pune (boarding at Pune only)</small></div><small>3A · overnight</small><div style="text-align:right"><b class="t">14:20</b><small>Jaipur · Thu 26 Nov</small></div></div>
+<div class="leg">PNR <b>8356214903</b><button class="cp" data-cp="8356214903">Copy</button> · Passenger: AMOL SURENDRA KA +1 · ₹3,294 <span class="paid">fully paid</span> · <a class="doc" data-doc="train">Open ticket ↗</a></div>
+<div class="leg"><b>If not confirmed by 23 Nov:</b> send Amol and Vaidehi's details to the ticket agent on WhatsApp <a href="https://wa.me/918432332510" target="_blank" rel="noopener">+91 84323 32510</a> for Tatkal tickets.</div></article>
+
+<article class="card flight fam" data-v="fam"><div class="top"><span class="who fam">Siddharth · Isha · Samar</span><span class="tag">Paid</span></div><b>Thu 3 Dec · Flight home</b>
 <div class="fl"><div><b class="t">15:50</b><small>Jaisalmer JSA</small></div><small>via Delhi</small><div style="text-align:right"><b class="t">23:25</b><small>Pune PNQ</small></div></div>
 <div class="leg">JSA → DEL · 15:50–17:25</div><div class="leg">DEL → PNQ · 21:15–23:25 <small>(3 h 50 min layover)</small></div>
-<div class="leg">PNR <b>TYU1GM</b><button class="cp" data-cp="TYU1GM">Copy</button> · ₹24,135</div></article>
+<div class="leg">PNR <b>TYU1GM</b><button class="cp" data-cp="TYU1GM">Copy</button> · ₹24,135 · <a class="doc" data-doc="famRet">Open confirmation ↗</a></div></article>
+
+<article class="card flight par" data-v="par"><div class="top"><span class="who par">Amol &amp; Vaidehi</span><span class="tag">Paid · ₹15,226</span></div><b>Thu 3 Dec · IndiGo flight to Mumbai, then bus</b>
+<div class="fl"><div><b class="t">10:45</b><small>Jaisalmer JSA</small></div><small>Direct</small><div style="text-align:right"><b class="t">13:05</b><small>Mumbai BOM · Terminal 2</small></div></div>
+<div class="leg">Then a <b>Shivneri bus</b> from Mumbai to Pune. No booking needed.</div>
+<div class="leg">IndiGo PNR <b>FG8H5X</b><button class="cp" data-cp="FG8H5X">Copy</button> · <a class="doc" data-doc="parRet">Open confirmation ↗</a></div></article>
+
+<article class="card all" style="grid-column:1/-1"><div class="top"><span class="who all">All five</span><span class="tag d">Unpaid · ₹47,500</span></div><b>Cab for the whole route · JCR Cabs, Innova Crysta</b>
+<div class="leg">Budget confirmed at <b>₹47,500, everything included</b>. Contact <a href="tel:+919785510001">+91 97855 10001</a> or <a href="tel:+919799735500">+91 97997 35500</a> · <a class="doc" data-doc="cab">Open confirmation ↗</a></div>
+<div class="leg">Payment: ₹47,500 total · <b id="cabpaid"></b></div>
+<div class="leg">Tell the driver two Jaipur pick-ups on 26 Nov (family 08:35 airport, parents 14:20 station) and two Jaisalmer airport times on 3 Dec (parents 10:45 flight, family 15:50 flight).</div></article>
 </div></section>
 
 <section id="itinerary">
-<h2>Day by day</h2><p class="sub">Colours mark the city. Tap a day to open it. Order and timings are planning estimates.</p>
+<h2>Day by day</h2><p class="sub">Colours mark the city. Tap a day to open it. Where the two families differ, each has its own lane. Order and timings are planning estimates.</p>
 <div class="row"><button class="btn" id="all">Expand all</button><button class="btn ghost" onclick="window.print()">Print / Save PDF</button></div>
 <div id="days"></div></section>
 
 <section id="stays">
-<h2>Stays and booking references</h2><p class="sub">All five hotels with payment status.</p>
-<div class="card scroll"><table><thead><tr><th>Stay</th><th>Dates</th><th>Booking ref</th><th class="n">Total</th><th class="n">Pending</th><th>Map</th></tr></thead><tbody id="hot"></tbody></table></div>
-<p class="sub" style="margin-top:10px;font-size:13px">Check each confirmation for meal plan, check-in time and cancellation terms.</p></section>
-
-<section id="budget">
-<h2>Where the money stands</h2><p class="sub">Confirmed bookings, planned cabs and your own estimates in one view.</p>
-<div class="grid g2">
-<div class="card"><table><thead><tr><th>Booked and planned</th><th>Status</th><th class="n">Amount</th></tr></thead><tbody id="bt"></tbody></table></div>
-<div class="card"><b>Split of total trip cost</b><div class="bar" id="bar"></div><div class="lg2" id="lg2"></div>
-<div style="margin:16px 0 4px" class="stat"><small>Cash and payments still to make</small><b id="still" class="due"></b><em>Hotel balances + both cabs + expected extras not yet spent</em></div></div>
-</div></section>
+<h2>Stays and booking references</h2><p class="sub">Hotels for the selected travellers, with payment status. Sunrise Desert Resort is one booking for all five, split equally between the two families.</p>
+<div class="card scroll"><table><thead><tr><th>Stay</th><th>Dates</th><th>Booking ref</th><th class="n">Total</th><th class="n">Pending</th><th>Confirmation</th><th>Map</th></tr></thead><tbody id="hot"></tbody></table></div>
+<p class="sub" style="margin-top:10px;font-size:13px">Check each confirmation for meal plan, check-in time and cancellation terms. The family's old SIA Luxury Resort booking (2–3 Dec) is being cancelled; confirm the refund.</p></section>
 
 <section id="expenses">
-<h2>Expected expenses</h2><p class="sub">Starter guesses for costs not covered above. Overwrite any number, rename rows, add your own. Saved on this device only.</p>
+<h2>Expected expenses</h2><p class="sub">One combined list for all five travellers, whichever view is selected. Starter guesses for day-to-day costs on top of the bookings. Overwrite any number, rename rows, add your own. Saved on this device only.</p>
 <div class="card"><div class="scroll"><table><thead><tr><th>Item</th><th class="n">Expected (₹)</th><th class="n">Spent so far (₹)</th><th class="n">Left (₹)</th><th></th></tr></thead><tbody id="ex"></tbody>
 <tfoot><tr><th>Total</th><th class="n" id="te"></th><th class="n" id="ta"></th><th class="n" id="tl"></th><th></th></tr></tfoot></table></div>
-<div class="row" style="margin:14px 0 0"><button class="btn" id="add">Add expense</button><button class="btn ghost" id="sum">Copy trip summary</button><button class="btn ghost" id="rst">Reset to starter values</button></div>
-<p class="sub" style="margin:10px 0 0;font-size:13px">Not included: cab tolls, parking and driver allowance if Rajputana Cabs excludes them. Confirm this, then adjust the row.</p></div></section>
+<div class="row" style="margin:14px 0 0"><button class="btn" id="add">Add expense</button><button class="btn ghost" id="sum">Copy summary</button><button class="btn ghost" id="rst">Reset to starter values</button></div>
+<p class="sub" style="margin:10px 0 0;font-size:13px">The JCR Cabs price is all-inclusive, so tolls, parking and driver allowance are not budgeted separately.</p></div></section>
 
 <section id="todo">
-<h2>To-do and packing</h2><p class="sub">Tick things off as you go. Ticks are saved on this device.</p>
+<h2>To-do and packing</h2><p class="sub">Tick things off as you go. Ticks are saved on this device. The list follows the traveller switch.</p>
 <div class="grid g2"><div class="card"><b>Arrangements</b><div class="prog"><i id="p1"></i></div><div id="l1"></div></div>
 <div class="card"><b>Packing and carry-on</b><div class="prog"><i id="p2"></i></div><div id="l2"></div></div></div>
-<div class="notice" style="margin-top:14px"><b>Cab contact:</b> Rajputana Cabs <a href="tel:+919983010250">9983010250</a>. Weather shown here is typical for late November only; check a forecast a few days before you go.</div>
+<div class="notice" style="margin-top:14px"><b>Cab contact:</b> JCR Cabs <a href="tel:+919785510001">+91 97855 10001</a> · <a href="tel:+919799735500">+91 97997 35500</a>. Weather shown here is typical for late November only; check a forecast a few days before you go.</div>
 </section>
 </main>
-<footer><div class="wrap">Rajasthan Family Journey · 26 Nov – 3 Dec 2026. Static page: no server, no libraries. Flight, hotel and payment details come from your bookings; drive times and sightseeing order are estimates.</div></footer>
+<footer><div class="wrap">Rajasthan Family Journey · 25 Nov – 3 Dec 2026. Static page: no server, no libraries. Confirmation links open files from the <code>confirmations</code> folder next to this page. Drive times and sightseeing order are estimates.</div></footer>
 <script>
-const $=s=>document.querySelector(s),R=n=>'₹'+Math.round(n).toLocaleString('en-IN'),LS=localStorage;
+const $=s=>document.querySelector(s),R=n=>'₹'+(Number.isInteger(n)?n.toLocaleString('en-IN'):n.toLocaleString('en-IN',{minimumFractionDigits:2,maximumFractionDigits:2})),LS=localStorage;
+/* Update this once the JCR Cabs advance is paid (₹). */
+const CAB_TOTAL=47500,CAB_PAID=0;
 const sv=(k,v)=>{try{LS.setItem(k,v)}catch(e){}},ld=k=>{try{return LS.getItem(k)}catch(e){return null}};
-const C={jp:['Jaipur','var(--jp)'],ud:['Udaipur','var(--ud)'],jd:['Jodhpur','var(--jd)'],sm:['Sam dunes','var(--sm)'],js:['Jaisalmer','var(--js)']};
+/* Confirmation files: drop them in the "confirmations" folder with these names (or edit the names here). */
+const DOC={famOut:'confirmations/flight-family-outbound-T675KL.pdf',famRet:'confirmations/flight-family-return-TYU1GM.pdf',
+train:'confirmations/train-12939-pnr-8356214903.pdf',parRet:'confirmations/flight-parents-return-FG8H5X.pdf',cab:'confirmations/cab-jcr-cabs.pdf',
+jp:'confirmations/hotel-parents-jaipur-magenta.pdf',ud:'confirmations/hotel-parents-udaipur-shambhu-villas.pdf',jd:'confirmations/hotel-parents-jodhpur-krishna-prakash.pdf',
+js1:'confirmations/hotel-all-jaisalmer-sunrise-desert-resort.pdf',js2:'confirmations/hotel-parents-jaisalmer-heritage-house.pdf',
+fjp:'confirmations/hotel-family-jaipur-umaid-bhawan.pdf',fud:'confirmations/hotel-family-udaipur-chunda-haveli.pdf',fjd:'confirmations/hotel-family-jodhpur-krishna-prakash.pdf',fjs2:'confirmations/hotel-family-jaisalmer-heritage-house.pdf'};
+const wireDocs=()=>document.querySelectorAll('[data-doc]').forEach(a=>{a.href=DOC[a.dataset.doc];a.target='_blank';a.rel='noopener'});
+const C={pn:['Pune','var(--pn)'],jp:['Jaipur','var(--jp)'],ud:['Udaipur','var(--ud)'],jd:['Jodhpur','var(--jd)'],js:['Jaisalmer','var(--js)']};
+const FAM='Siddharth · Isha · Samar',PAR='Amol & Vaidehi';
+// t = total, p = paid; k = key in the editable amounts when the total wasn't provided
 const H=[
-{c:'jp',n:'Umaid Bhawan – Heritage Style Boutique Hotel',d:'26–28 Nov · 2 nights',id:'2048806260',t:13148.12,p:13148.12,s:'Agoda'},
-{c:'ud',n:'Chunda Haveli – Heritage Hotel near City Palace',d:'28–30 Nov · 2 nights',id:'NH26047515547712',t:12804,p:12804,s:'MakeMyTrip'},
-{c:'jd',n:'Krishna Prakash Heritage Haveli Hotel',d:'30 Nov–1 Dec · 1 night',id:'2048885045',t:2947,p:1500,s:'Agoda'},
-{c:'sm',n:'SIA The Luxury Resort, Sam Sand Dunes',d:'1–2 Dec · 1 night',id:'Email confirmation',t:3500,p:1400,s:'Direct'},
-{c:'js',n:'Hotel Heritage House',d:'2–3 Dec · 1 night',id:'NH26047515554130',t:4418,p:4418,s:'MakeMyTrip'}];
+{g:'fam',c:'jp',n:'Umaid Bhawan – Heritage Style Boutique Hotel',q:'Umaid Bhawan Heritage Style Boutique Hotel Jaipur',d:'26–28 Nov · 2 nights',id:'2048806260',t:13148.12,p:13148.12,s:'Agoda',doc:'fjp'},
+{g:'par',c:'jp',n:'Hotel Magenta – City Center, Bani Park',q:'Hotel Magenta Bani Park Jaipur',d:'26–28 Nov · 2 nights',id:'GH21188282107962',t:8556,p:8556,s:'Goibibo',doc:'jp'},
+{g:'fam',c:'ud',n:'Chunda Haveli – Heritage Hotel near City Palace',q:'Chunda Haveli Udaipur',d:'28–30 Nov · 2 nights',id:'NH26047515547712',t:12804,p:12804,s:'MakeMyTrip',doc:'fud'},
+{g:'par',c:'ud',n:'Tripli Hotels Shambhu Villas',q:'Tripli Hotels Shambhu Villas Udaipur',d:'28–30 Nov · 2 nights',id:'GH20035282108778',t:5203,p:5203,s:'Goibibo',doc:'ud'},
+{g:'fam',c:'jd',n:'Krishna Prakash Heritage Haveli Hotel',q:'Krishna Prakash Heritage Jodhpur',d:'30 Nov–1 Dec · 1 night',id:'2048885045',t:2947,p:1500,s:'Agoda',doc:'fjd',when:'balance at hotel'},
+{g:'par',c:'jd',n:'Krishna Prakash Heritage (separate booking)',q:'Krishna Prakash Heritage Jodhpur',d:'30 Nov–1 Dec · 1 night',id:'OFFL-11276491626',t:3570,p:0,s:'Direct with hotel (WhatsApp: Nikhil Mathur)',doc:'jd',when:'at check-in, 30 Nov'},
+{g:'fam',c:'js',n:'Sunrise Desert Resort with Swimming Pool',q:'Sunrise Desert Resort Jaisalmer',d:'1–2 Dec · 1 night',id:'NH27035532181478',t:4914.5,p:0,s:'MakeMyTrip · half of ₹9,829 · replaces SIA',doc:'js1',when:'before 29 Nov'},
+{g:'par',c:'js',n:'Sunrise Desert Resort with Swimming Pool',q:'Sunrise Desert Resort Jaisalmer',d:'1–2 Dec · 1 night',id:'NH27035532181478',t:4914.5,p:0,s:'MakeMyTrip · half of ₹9,829',doc:'js1',when:'before 29 Nov'},
+{g:'fam',c:'js',n:'Hotel Heritage House',q:'Hotel Heritage House Jaisalmer',d:'2–3 Dec · 1 night',id:'NH26047515554130',t:4418,p:4418,s:'MakeMyTrip',doc:'fjs2'},
+{g:'par',c:'js',n:'Hotel Heritage House (separate booking)',q:'Hotel Heritage House Jaisalmer',d:'2–3 Dec · 1 night',id:'NH25221532180372',t:4410,p:4410,s:'MakeMyTrip',doc:'js2'}];
 const D=[
-['Thu 26 Nov','Mumbai → Jaipur','Early flight, easy afternoon','jp',[],['City Palace','Hawa Mahal','Albert Hall Museum','Birla Mandir'],'Arrival is 08:35 after a 02:15 airport start. Ask the hotel about early check-in or luggage hold, and keep the afternoon light: nap first, sights second.','Umaid Bhawan · night 1 of 2 · breakfast included'],
-['Fri 27 Nov','Jaipur','Forts day','jp',[],['Amer Fort and Sheesh Mahal','Jaigarh Fort and Jaivana Cannon','Nahargarh Fort (keep flexible)','Jal Mahal photo stop','Govind Dev Ji Temple (optional)'],'Do Amer early. It has steps and slopes, so a carrier is easier than a stroller. Drop Nahargarh if the child tires.','Umaid Bhawan · night 2 of 2 · breakfast included'],
-['Sat 28 Nov','Jaipur → Udaipur','Long drive day','ud',['400 km','6–7 h'],['Bapu Bazaar (evening)','Under the Sun Aquarium','Or just rest at the hotel'],'Longest drive of the trip. Start right after breakfast, plan a lunch stop with a play area if possible, and keep snacks and travel-sickness medicine handy.','Chunda Haveli · night 1 of 2 · breakfast included'],
-['Sun 29 Nov','Udaipur','City of Lakes','ud',[],['Sajjangarh / Monsoon Palace','Fateh Sagar Lake','Saheliyon Ki Bari','City Palace Complex and Crystal Gallery','Lake Pichola boat ride (extra cost)','Jagmandir Palace'],'Do palaces in the morning and the boat ride near sunset. Confirm boat tickets and child rules at the jetty.','Chunda Haveli · night 2 of 2 · breakfast included'],
-['Mon 30 Nov','Udaipur → Jodhpur','Direct drive, no Ranakpur','jd',['250 km','5–6 h'],['Mehrangarh Fort','Jaswant Thada','Umaid Bhawan Palace (view)','Ghanta Ghar and Sardar Market'],'If you arrive late, do Mehrangarh and Jaswant Thada first; markets can wait for the evening.','Krishna Prakash Heritage Haveli · 1 night · ₹1,447 due'],
-['Tue 1 Dec','Jodhpur → Jaisalmer → Sam','Longest desert stretch','sm',['280 km','5–6 h'],['Jaisalmer War Memorial','Check in at SIA Luxury Resort','Camel safari (confirm inclusion)','Sunset on the dunes','Folk music and dinner at camp (confirm)'],'Desert nights are cold. Keep warm layers for the child in the day bag, not the boot. Tell the driver and resort your arrival time in advance.','SIA The Luxury Resort · 1 night · ₹2,100 due'],
-['Wed 2 Dec','Sam → Jaisalmer','Golden City','js',['~40 km','about 1 h'],['Gadisar Lake','Jaisalmer Fort','Patwon Ki Haveli','Salim Singh Ki Haveli','Nathmal Ki Haveli'],'Fort lanes are cobbled and uneven. Check breakfast inclusion in the MakeMyTrip confirmation.','Hotel Heritage House · 1 night'],
-['Thu 3 Dec','Jaisalmer → Delhi → Pune','Fly home','js',[],['Check out and go to Jaisalmer airport','15:50 depart JSA','17:25 arrive DEL','21:15 depart DEL','23:25 arrive PNQ'],'Aim to reach the airport about 2 hours before. Pack snacks for the 3 h 50 min Delhi layover.','Home in Pune']];
-const E0=[['Meals and snacks (beyond breakfast)',16000],['Monument and fort tickets',4000],['Boat ride, camel safari and activities',3000],['Tolls, parking, driver tip',2500],['Child needs (diapers, medicine, snacks)',2000],['Shopping and souvenirs',5000],['Tips and small cash',1500],['Buffer for surprises',5000]];
-const T1=['Pay ₹1,447 balance to Krishna Prakash Heritage Haveli','Pay ₹2,100 balance to SIA The Luxury Resort','Book Pune → Mumbai airport cab for the night of 25 Nov (about ₹3,000)','Book Rajputana Cabs about 3 days before travel (about ₹25,000)','Ask Rajputana: does the price include sightseeing, driver allowance, tolls, parking, state taxes and airport drops?','Confirm SIA camel safari, cultural programme, dinner and breakfast','Check breakfast inclusion for Hotel Heritage House','Confirm monument tickets and Lake Pichola boat costs','Ask Jaipur hotel about early check-in or luggage hold','Reconfirm flight times, PNRs and baggage allowance a day before'];
-const T2=['Photo IDs for both adults, birth certificate or Aadhaar for the child','Warm layers and a jacket for the desert night (Sam)','Sun hats, sunscreen and sunglasses for daytime','Child carrier or light stroller for forts','Snacks, wipes, spare clothes and favourite toy for the car','Basic medicines: fever, upset stomach, travel sickness, ORS','Power bank and phone chargers','Offline Google Maps for all five cities','Downloaded or printed bookings and tickets','Cash in small notes for tolls, tips and entry fees'];
+{dt:'Wed 25 Nov',r:'Pune → on the move',s:'Two departures, one destination',c:'pn',pills:[],acts:[],tip:'Parents board at Pune at 17:30. Keep checking the waitlist, and see the Tatkal fallback if it has not confirmed by 23 Nov. The family leaves later, by cab to Mumbai.',sf:'Home in Pune, leave about 10 pm',sp:'Overnight on train 12939 (3A)',
+ fam:['Leave Pune about 10 pm by cab (still to book, about ₹3,000)','At Mumbai airport by about 02:15 for the 04:15 flight'],
+ par:['17:30 Train 12939 leaves Pune, 3A (PNR 8356214903)','Overnight on the train. Waitlist WL 53 / WL 54 must confirm']},
+{dt:'Thu 26 Nov',r:'Pune/Mumbai → Jaipur',s:'Two arrivals, easy afternoon',c:'jp',pills:[],acts:['City Palace','Hawa Mahal','Albert Hall Museum','Birla Mandir'],tip:'Parents arrive at 14:20, so keep the day light. The family can rest or do City Palace in the morning; everyone together for Hawa Mahal and Birla Mandir after about 16:30.',sf:'Umaid Bhawan · night 1 of 2',sp:'Hotel Magenta · night 1 of 2',
+ fam:['04:15 BOM → AMD, 07:00 AMD → JAI, land 08:35 (PNR T675KL)','Ask the hotel about early check-in or a luggage hold, nap first, sights second'],
+ par:['14:20 Train arrives at Jaipur','Cab to Hotel Magenta, check in and rest']},
+{dt:'Fri 27 Nov',r:'Jaipur',s:'Forts day',c:'jp',pills:[],acts:['Amer Fort and Sheesh Mahal','Jaigarh Fort and Jaivana Cannon','Nahargarh Fort (keep flexible)','Jal Mahal photo stop','Govind Dev Ji Temple (optional)'],tip:'Do Amer early. It has steps and slopes: ask about the jeep ride up for Amol and Vaidehi, and use a carrier for Samar rather than a stroller. Drop Nahargarh if anyone tires.',sf:'Umaid Bhawan · night 2 of 2',sp:'Hotel Magenta · night 2 of 2'},
+{dt:'Sat 28 Nov',r:'Jaipur → Udaipur',s:'Long drive day',c:'ud',pills:['400 km','6–7 h'],acts:['Bapu Bazaar (evening)','Under the Sun Aquarium','Or just rest at the hotel'],tip:'Longest drive of the trip, but the Innova has room for five. Start right after breakfast, plan a lunch stop with a play area if possible, and keep snacks and travel-sickness medicine handy.',sf:'Chunda Haveli · night 1 of 2',sp:'Tripli Shambhu Villas · night 1 of 2'},
+{dt:'Sun 29 Nov',r:'Udaipur',s:'City of Lakes',c:'ud',pills:[],acts:['Sajjangarh / Monsoon Palace','Fateh Sagar Lake','Saheliyon Ki Bari','City Palace Complex and Crystal Gallery','Lake Pichola boat ride (extra cost)','Jagmandir Palace'],tip:'Do palaces in the morning and the boat ride near sunset. Confirm boat tickets and child rules at the jetty. Sunrise Desert Resort must be paid before today (due before 29 Nov).',sf:'Chunda Haveli · night 2 of 2',sp:'Tripli Shambhu Villas · night 2 of 2'},
+{dt:'Mon 30 Nov',r:'Udaipur → Jodhpur',s:'Direct drive, no Ranakpur',c:'jd',pills:['250 km','5–6 h'],acts:['Mehrangarh Fort','Jaswant Thada','Umaid Bhawan Palace (view)','Ghanta Ghar and Sardar Market'],tip:'If you arrive late, do Mehrangarh and Jaswant Thada first; markets can wait for the evening. Mehrangarh has a lift for part of the climb.',sf:'Krishna Prakash Heritage Haveli · ₹1,447 due',sp:'Krishna Prakash Heritage (own booking) · ₹3,570 due at check-in'},
+{dt:'Tue 1 Dec',r:'Jodhpur → Jaisalmer',s:'Longest desert stretch',c:'js',pills:['280 km','5–6 h'],acts:['Jaisalmer War Memorial','Check in at Sunrise Desert Resort','Time in the resort pool','Sunset on the dunes or a camel ride (confirm distance and cost)'],tip:'Desert nights are cold. Keep warm layers in the day bag, not the boot. Confirm how far the resort is from the town and the dunes, and tell the driver and resort your arrival time in advance.',sf:'Sunrise Desert Resort · ₹4,914.50 due, pay before 29 Nov',sp:'Sunrise Desert Resort · ₹4,914.50 due, pay before 29 Nov'},
+{dt:'Wed 2 Dec',r:'Jaisalmer',s:'Golden City, no long drive',c:'js',pills:[],acts:['Check out of Sunrise, check in at Heritage House','Gadisar Lake','Jaisalmer Fort','Patwon Ki Haveli','Salim Singh Ki Haveli','Nathmal Ki Haveli'],tip:'Fort lanes are cobbled and uneven. Pack tonight: parents leave very early tomorrow for a 10:45 flight, so agree the airport departure time with the driver.',sf:'Hotel Heritage House · paid',sp:'Hotel Heritage House (own booking) · paid'},
+{dt:'Thu 3 Dec',r:'Jaisalmer → home',s:'Two flights, two routes',c:'js',pills:[],acts:['Check out and go to Jaisalmer airport (about 2 hours before each flight)'],tip:'The cab does two airport runs, or the family can wait at the hotel. Parents carry snacks for the bus; the family packs snacks for the 3 h 50 min Delhi layover.',sf:'Home in Pune late tonight (23:25)',sp:'Home in Pune this evening',
+ fam:['15:50 JSA → DEL (arrive 17:25)','21:15 DEL → PNQ (arrive 23:25), PNR TYU1GM'],
+ par:['10:45 IndiGo JSA → BOM (arrive 13:05, Terminal 2), PNR FG8H5X','Shivneri bus from Mumbai to Pune, no booking needed']}];
+const E0=[['Meals and snacks (beyond breakfast)',25000],['Monument and fort tickets',7000],['Boat ride, camel safari and activities',5000],['Driver tip and small cash',3000],['Child needs (diapers, medicine, snacks)',2000],['Shopping and souvenirs',7000],['Shivneri bus Mumbai → Pune (parents)',1400],['Buffer for surprises',7000]];
+// [text, who] who: '' = everyone, fam, par
+const T1=[
+['Pay Sunrise Desert Resort on MakeMyTrip before 29 Nov: ₹4,914.50 per family (₹9,829 in total)',''],
+['Pay ₹1,447 balance to Krishna Prakash Heritage Haveli (booking 2048885045)','fam'],
+['Check the old SIA Luxury Resort booking (2–3 Dec) is cancelled and the refund comes through','fam'],
+['Pay ₹3,570 to Krishna Prakash at check-in on 30 Nov (separate direct booking OFFL-11276491626, confirmed on WhatsApp by Nikhil Mathur)','par'],
+['Ask JCR Cabs to confirm pick-ups (airport 08:35 and station 14:20 on 26 Nov) and the two Jaisalmer airport runs on 3 Dec',''],
+['Pay the JCR Cabs advance (₹47,500 total is unpaid) and update CAB_PAID in index.html',''],
+['Confirm Sunrise Desert Resort breakfast, pool, distance to the dunes and camel safari',''],
+['Check breakfast and check-in time on each hotel confirmation',''],
+['Confirm monument tickets and Lake Pichola boat costs',''],
+['Book Pune → Mumbai airport cab for the night of 25 Nov (about ₹3,000)','fam'],
+['Reconfirm the 26 Nov and 3 Dec flight times and PNRs a day before','fam'],
+['Check PNR 8356214903 daily until the waitlist (WL 53, WL 54) clears','par'],
+['If still waitlisted by 23 Nov, WhatsApp the agent on +91 84323 32510 with Amol and Vaidehi\'s details for Tatkal tickets','par'],
+['Save the train ticket and carry original photo ID (needed on 3A)','par'],
+['Check IndiGo baggage allowance and web check-in for FG8H5X on 2 Dec','par']];
+const T2=[
+['Photo IDs for both adults, birth certificate or Aadhaar for the child','fam'],
+['Original photo IDs for Amol and Vaidehi (train and flight)','par'],
+['Regular medicines and prescriptions for Amol and Vaidehi','par'],
+['Warm layers and a jacket for the desert night',''],
+['Sun hats, sunscreen and sunglasses for daytime',''],
+['Child carrier or light stroller for forts','fam'],
+['Snacks, wipes, spare clothes and favourite toy for the car','fam'],
+['Basic medicines: fever, upset stomach, travel sickness, ORS',''],
+['Power bank and phone chargers',''],
+['Offline Google Maps for all five cities',''],
+['Downloaded or printed bookings and tickets',''],
+['Cash in small notes for tolls, tips and entry fees','']];
+const who=w=>w?`<span class="who ${w}">${w==='fam'?'Family':'Parents'}</span>`:'';
 // header
-const tn=H.map(h=>+h.d.split('·')[1].trim()[0]);
-$('#band').innerHTML=H.map((h,i)=>`<i style="flex:${tn[i]};background:${C[h.c][1]}"></i>`).join('');
-$('#legend').innerHTML=H.map((h,i)=>`<div style="flex:${tn[i]}"><b>${C[h.c][0]}</b>${tn[i]} night${tn[i]>1?'s':''}</div>`).join('');
-// countdown
-(function(){const s=new Date(2026,10,26),e=new Date(2026,11,3),t=new Date();t.setHours(0,0,0,0);const d=Math.round((s-t)/864e5);
-if(d>1){$('#cd').textContent=d+' days to go'}else if(d===1){$('#cd').textContent='Tomorrow'}else if(t<=e){const n=Math.round((t-s)/864e5)+1;$('#cd').textContent='Day '+n+' of 8';$('#cds').textContent=D[n-1][1];window.TODAY=n-1}else{$('#cd').textContent='Trip complete';$('#cds').textContent='Welcome home'}})();
+const seg=[{c:'jp',n:2},{c:'ud',n:2},{c:'jd',n:1},{c:'js',n:2}];
+$('#band').innerHTML=seg.map(s=>`<i style="flex:${s.n};background:${C[s.c][1]}"></i>`).join('');
+$('#legend').innerHTML=seg.map(s=>`<div style="flex:${s.n}"><b>${C[s.c][0]}</b>${s.n} night${s.n>1?'s':''}</div>`).join('');
+// countdown (to the first departure, 25 Nov)
+(function(){const s=new Date(2026,10,25),e=new Date(2026,11,3),t=new Date();t.setHours(0,0,0,0);const d=Math.round((s-t)/864e5);
+if(d>1){$('#cd').textContent=d+' days to go'}else if(d===1){$('#cd').textContent='Tomorrow'}else if(t<=e){const n=Math.round((t-s)/864e5);$('#cd').textContent=n===0?'Journey begins today':'Day '+n+' of 8';$('#cds').textContent=D[n].r;window.TODAY=n}else{$('#cd').textContent='Trip complete';$('#cds').textContent='Welcome home'}})();
 // days
-$('#days').innerHTML=D.map((d,i)=>`<details class="day${window.TODAY===i?' today':''}" style="--c:${C[d[3]][1]}"${i===0||window.TODAY===i?' open':''}><summary><span class="dn">${i+1}</span><span><h3>${d[0]} · ${d[1]}</h3><small>${d[2]}</small></span></summary><div class="db"><div>${d[4].map(x=>`<span class="pill lg">${x}</span>`).join('')}<ul>${d[5].map(x=>`<li>${x}</li>`).join('')}</ul><div class="tip">${d[6]}</div></div><aside class="stay"><b>Tonight</b>${d[7]}</aside></div></details>`).join('');
+const lane=(w,items)=>`<div class="lane ${w}" data-v="${w}"><b><span class="who ${w}">${w==='fam'?FAM:PAR}</span></b><ul>${items.map(x=>`<li>${x}</li>`).join('')}</ul></div>`;
+$('#days').innerHTML=D.map((d,i)=>`<details class="day${window.TODAY===i?' today':''}" style="--c:${C[d.c][1]}"${i<2||window.TODAY===i?' open':''}><summary><span class="dn">${d.dt.split(' ')[1]}</span><span><h3>${d.dt} · ${d.r}</h3><small>${d.s}</small></span></summary><div class="db"><div>${d.pills.map(x=>`<span class="pill lg">${x}</span>`).join('')}${d.fam?`<div class="lanes">${lane('fam',d.fam)}${lane('par',d.par)}</div>`:''}${d.acts.length?`<ul>${d.acts.map(x=>`<li>${x}</li>`).join('')}</ul>`:''}<div class="tip">${d.tip}</div></div><aside class="stay"><b>Tonight</b>${d.sf===d.sp?d.sf:`<div data-v="fam">${who('fam')}<br>${d.sf}</div><div data-v="par" style="margin-top:6px">${who('par')}<br>${d.sp}</div>`}</aside></div></details>`).join('');
 let open=false;$('#all').onclick=function(){open=!open;document.querySelectorAll('.day').forEach(x=>x.open=open);this.textContent=open?'Collapse all':'Expand all'};
 addEventListener('beforeprint',()=>document.querySelectorAll('.day').forEach(x=>x.open=true));
-// hotels
-$('#hot').innerHTML=H.map(h=>{const due=h.t-h.p;return `<tr><td><span class="dot" style="background:${C[h.c][1]}"></span><b>${h.n}</b><br><small style="color:var(--mut)">${C[h.c][0]} · ${h.s}</small></td><td>${h.d}</td><td>${h.id}${h.id.startsWith('Email')?'':`<button class="cp" data-cp="${h.id}">Copy</button>`}</td><td class="n">${R(h.t)}</td><td class="n">${due>1?`<span class="due">${R(due)}</span>`:'<span class="paid">Paid</span>'}</td><td><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(h.n.split('–')[0].split(',')[0]+' '+C[h.c][0].replace('Sam dunes','Sam Sand Dunes Jaisalmer'))}">Open</a></td></tr>`}).join('');
+const hv=h=>h.t,hp=h=>h.p;
+function hotels(){$('#hot').innerHTML=H.map(h=>{const t=hv(h),due=t-hp(h);return `<tr${h.g==='all'?'':` data-v="${h.g}"`}><td><span class="dot" style="background:${C[h.c][1]}"></span><b>${h.n}</b><br><small style="color:var(--mut)">${C[h.c][0]} · ${h.s}</small><br>${who(h.g)}</td><td>${h.d}</td><td>${h.id}<button class="cp" data-cp="${h.id}">Copy</button></td><td class="n">${t?R(t):'<small style="color:var(--mut)">not entered</small>'}</td><td class="n">${due>1?`<span class="due">${R(due)}</span><br><small>${h.when}</small>`:'<span class="paid">Paid</span>'}</td><td><a class="doc" data-doc="${h.doc}">Open ↗</a></td><td><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(h.q)}">Open</a></td></tr>`}).join('');wireDocs()}
 // copy
 document.addEventListener('click',e=>{const b=e.target.closest('[data-cp]');if(b){navigator.clipboard&&navigator.clipboard.writeText(b.dataset.cp);const o=b.textContent;b.textContent='Copied';setTimeout(()=>b.textContent=o,1200)}});
 // expenses
-let X;try{X=JSON.parse(ld('rj-exp-v2'))}catch(e){}if(!Array.isArray(X))X=E0.map(r=>({l:r[0],e:r[1],a:0}));
-const HT=H.reduce((s,h)=>s+h.t,0),HP=H.reduce((s,h)=>s+h.p,0),FL=47987,CAB1=3000,CAB2=25000;
+let X;try{X=JSON.parse(ld('rj-exp-v3'))}catch(e){}if(!Array.isArray(X))X=E0.map(r=>({l:r[0],e:r[1],a:0}));
 const sumX=k=>X.reduce((s,r)=>s+(+r[k]||0),0),left=()=>X.reduce((s,r)=>s+Math.max((+r.e||0)-(+r.a||0),0),0);
-function calc(){const te=sumX('e'),ta=sumX('a'),L=left(),tot=HT+FL+CAB1+CAB2+te,still=HT-HP+CAB1+CAB2+L,paid=HP+FL+ta;
-$('#te').textContent=R(te);$('#ta').textContent=R(ta);$('#tl').textContent=R(L);
+function calc(){hotels();
+$('#te').textContent=R(sumX('e'));$('#ta').textContent=R(sumX('a'));$('#tl').textContent=R(left());
 X.forEach((r,i)=>{const c=$('#lf'+i);if(c){const v=(+r.e||0)-(+r.a||0);c.textContent=R(v);c.style.color=v<0?'var(--due)':''}});
-$('#stats').innerHTML=[['Trip total',R(tot),'Booked + planned + extras'],['Already paid',R(paid),'Flights, hotels, spent extras'],['Per day',R(tot/8),'8 days'],['Per person',R(tot/3),'Rough, child included']].map(s=>`<div class="card stat"><small>${s[0]}</small><b>${s[1]}</b><em>${s[2]}</em></div>`).join('');
-$('#still').textContent=R(still);
-const seg=[['Flights',FL,'var(--jd)'],['Hotels',HT,'var(--ud)'],['Cabs',CAB1+CAB2,'var(--js)'],['Extras',te,'var(--jp)']];
-$('#bar').innerHTML=seg.map(s=>`<i style="width:${s[1]/tot*100}%;background:${s[2]}"></i>`).join('');
-$('#lg2').innerHTML=seg.map(s=>`<span><span class="dot" style="background:${s[2]}"></span>${s[0]} ${R(s[1])}</span>`).join('');
-$('#bt').innerHTML=[['Flights (2 bookings)','<span class="paid">Paid</span>',FL],['Hotels (5 stays)',`<span class="paid">${R(HP)} paid</span> · <span class="due">${R(HT-HP)} due</span>`,HT],['Pune → Mumbai airport cab','<span class="due">Unbooked · estimate</span>',CAB1],['Rajputana Cabs, 8 days','<span class="due">Unpaid · approx.</span>',CAB2],['Your expected extras','Editable below',te]].map(r=>`<tr><td>${r[0]}</td><td>${r[1]}</td><td class="n">${R(r[2])}</td></tr>`).join('')+`<tr><th colspan="2">Total</th><th class="n">${R(tot)}</th></tr>`;
-window._sum=`Rajasthan trip 26 Nov–3 Dec 2026\nTotal: ${R(tot)}\nPaid: ${R(paid)}\nStill to pay: ${R(still)}\nFlights ${R(FL)} · Hotels ${R(HT)} · Cabs ${R(CAB1+CAB2)} · Extras ${R(te)}\n`+X.map(r=>`- ${r.l}: expected ${R(+r.e||0)}, spent ${R(+r.a||0)}`).join('\n')}
+window._sum='Day-to-day expenses\n'+X.map(r=>`- ${r.l}: expected ${R(+r.e||0)}, spent ${R(+r.a||0)}`).join('\n')+`\nTotal expected ${R(sumX('e'))}, spent ${R(sumX('a'))}`}
 function rend(){$('#ex').innerHTML=X.map((r,i)=>`<tr><td><input class="nm" data-i="${i}" data-k="l" value="${r.l.replace(/"/g,'&quot;')}" aria-label="Item name"></td><td><input class="m" type="number" min="0" inputmode="numeric" data-i="${i}" data-k="e" value="${r.e}" aria-label="Expected"></td><td><input class="m" type="number" min="0" inputmode="numeric" data-i="${i}" data-k="a" value="${r.a||''}" placeholder="0" aria-label="Spent"></td><td class="n" id="lf${i}"></td><td><button class="x" data-del="${i}" aria-label="Remove row">×</button></td></tr>`).join('');calc()}
-$('#ex').addEventListener('input',e=>{const t=e.target;if(t.dataset.i==null)return;X[t.dataset.i][t.dataset.k]=t.dataset.k==='l'?t.value:(parseFloat(t.value)||0);sv('rj-exp-v2',JSON.stringify(X));calc()});
-$('#ex').addEventListener('click',e=>{const b=e.target.closest('[data-del]');if(b){X.splice(b.dataset.del,1);sv('rj-exp-v2',JSON.stringify(X));rend()}});
-$('#add').onclick=()=>{X.push({l:'New expense',e:0,a:0});sv('rj-exp-v2',JSON.stringify(X));rend()};
-$('#rst').onclick=()=>{if(confirm('Reset all expense rows to the starter values?')){X=E0.map(r=>({l:r[0],e:r[1],a:0}));sv('rj-exp-v2',JSON.stringify(X));rend()}};
-$('#sum').onclick=function(){navigator.clipboard&&navigator.clipboard.writeText(window._sum);this.textContent='Copied';setTimeout(()=>this.textContent='Copy trip summary',1400)};
+$('#ex').addEventListener('input',e=>{const t=e.target;if(t.dataset.i==null)return;X[t.dataset.i][t.dataset.k]=t.dataset.k==='l'?t.value:(parseFloat(t.value)||0);sv('rj-exp-v3',JSON.stringify(X));calc()});
+$('#ex').addEventListener('click',e=>{const b=e.target.closest('[data-del]');if(b){X.splice(b.dataset.del,1);sv('rj-exp-v3',JSON.stringify(X));rend()}});
+$('#add').onclick=()=>{X.push({l:'New expense',e:0,a:0});sv('rj-exp-v3',JSON.stringify(X));rend()};
+$('#rst').onclick=()=>{if(confirm('Reset all expense rows to the starter values?')){X=E0.map(r=>({l:r[0],e:r[1],a:0}));sv('rj-exp-v3',JSON.stringify(X));rend()}};
+$('#sum').onclick=function(){navigator.clipboard&&navigator.clipboard.writeText(window._sum);this.textContent='Copied';setTimeout(()=>this.textContent='Copy summary',1400)};
 rend();
-// checklists
-function cl(id,items,pre,pid){const el=$(id),pr=$(pid);el.innerHTML=items.map((t,i)=>`<label class="chk"><input type="checkbox" data-k="${pre}${i+1}"><span>${t}</span></label>`).join('');
-const bx=[...el.querySelectorAll('input')],up=()=>pr.style.width=bx.filter(b=>b.checked).length/bx.length*100+'%';
-bx.forEach(b=>{b.checked=ld(b.dataset.k)==='1';b.onchange=()=>{sv(b.dataset.k,b.checked?'1':'0');up()}});up()}
-cl('#l1',T1,'rajasthan-trip-task-','#p1');cl('#l2',T2,'rajasthan-trip-pack-','#p2');
+// checklists (follow the traveller switch)
+const UP=[];
+function cl(id,items,pre,pid){const el=$(id),pr=$(pid);el.innerHTML=items.map((t,i)=>`<label class="chk"${t[1]?` data-v="${t[1]}"`:''}><input type="checkbox" data-k="${pre}${i+1}"><span>${t[0]}</span>${who(t[1])}</label>`).join('');
+const bx=[...el.querySelectorAll('input')],up=()=>{const v=bx.filter(b=>b.closest('label').offsetParent!==null);pr.style.width=(v.length?v.filter(b=>b.checked).length/v.length*100:0)+'%'};
+bx.forEach(b=>{b.checked=ld(b.dataset.k)==='1';b.onchange=()=>{sv(b.dataset.k,b.checked?'1':'0');up()}});UP.push(up);up()}
+cl('#l1',T1,'rajasthan-trip-task-v3-','#p1');cl('#l2',T2,'rajasthan-trip-pack-v3-','#p2');
+// traveller switch
+function setView(v){document.body.dataset.view=v;calc();document.querySelectorAll('#seg button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.view===v));sv('rj-view',v);UP.forEach(f=>f())}
+$('#seg').addEventListener('click',e=>{const b=e.target.closest('button');if(b)setView(b.dataset.view)});
+setView(['all','fam','par'].includes(ld('rj-view'))?ld('rj-view'):'all');
+$('#cabpaid').innerHTML=CAB_PAID>=CAB_TOTAL?'<span class="paid">fully paid</span>':`${R(CAB_PAID)} paid · <span class="due">${R(CAB_TOTAL-CAB_PAID)} to pay</span>`;
+wireDocs();
 // nav highlight
-const ls=[...document.querySelectorAll('nav a')];
+const ls=[...document.querySelectorAll('nav .links a')];
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)ls.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id))}),{rootMargin:'-30% 0px -65% 0px'});document.querySelectorAll('main section').forEach(s=>io.observe(s));
 </script>
 </body>
